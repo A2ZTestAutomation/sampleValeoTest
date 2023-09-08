@@ -16,6 +16,7 @@ public class LoginTest {
 	  driver.findElement(By.className("radius")).click();
 	  boolean isDisp = driver.findElement(By.cssSelector("div.flash.success"))
 			  .isDisplayed();
+	  System.out.println("Page Title : ... " + driver.getTitle());
 	  Assert.assertTrue(isDisp);
 	    
   }
